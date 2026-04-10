@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>St. Mary's College | Empowering Excellence in Education</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=27">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-container">
+        <div class="brand">
+            <img src="assets/images/logo.png" alt="St. Mary's College Logo" class="brand-logo"/>
+            <div class="brand-text">
+                <h1>St. Mary's Arts and Science College, Cherupanathady</h1>
+                <p>Cherupanathady, Panathady PO, Rajapuram Via, Kasargod Dist, Kerala - 671532</p>
+            </div>
+        </div>
+        <div class="contact-top hidden-mobile">
+            <div class="contact-item">
+                <span class="material-symbols-outlined icon">call</span>
+                <span>7829825144, 9605904859</span>
+            </div>
+            <div class="contact-item">
+                <span class="material-symbols-outlined icon">mail</span>
+                <a href="mailto:smcpanathady@gmail.com">smcpanathady@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="container nav-container">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#activities">Activities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Admissions</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero glass-hero">
+    <div class="video-background">
+        <video autoplay muted loop playsinline class="active" id="heroVideo1">
+            <source src="assets/video/C1791.MP4" type="video/mp4">
+        </video>
+        <video autoplay muted loop playsinline id="heroVideo2">
+            <source src="assets/video/C1798.MP4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <span class="badge fade-in-up">Legacy of Excellence</span>
+        <h1 class="fade-in-up delay-1">Empowering<br> <i>Integrity</i> in Education</h1>
+        <p class="fade-in-up delay-2">
+            St. Mary's Arts and Science College: Educating the needy youth, taking care of the sick and orphan.
+        </p>
+        <div class="hero-buttons fade-in-up delay-3">
+            <a href="#contact" class="btn btn-primary">Apply for Admissions</a>
+            <a href="#facilities" class="btn btn-outline glass-btn">Explore Campus</a>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="vision-mission pt-section">
+    <div class="container vm-grid">
+        <div class="vm-card-premium slide-in-left">
+            <div class="vm-icon-box">
+                <span class="material-symbols-outlined">visibility</span>
+            </div>
+            <h3 class="vm-title">Our Vision</h3>
+            <div class="title-accent-sm"></div>
+            <p class="vm-text">"Education for Integrity"</p>
+        </div>
+        <div class="vm-card-premium slide-in-right">
+            <div class="vm-icon-box">
+                <span class="material-symbols-outlined">rocket_launch</span>
+            </div>
+            <h3 class="vm-title">Our Mission</h3>
+            <div class="title-accent-sm"></div>
+            <p class="vm-text">"Educating the needy youth, taking care of the sick and orphan"</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about section-padding">
+    <div class="container about-grid">
+        <div class="about-text">
+            <span class="badge-outline">Who We Are</span>
+            <h2 class="section-title">About Us</h2>
+            <div class="title-accent" style="margin-left: 0;"></div>
+            <p class="about-lead">
+                Embark on a journey of academic and personal growth at St. Mary's Arts and Science College. Whether you are a prospective student, parent, or well-wisher, we invite you to be part of our vibrant community.
+            </p>
+            <p class="about-desc">
+                Explore the opportunities, feel the warmth of our community, and join us as we continue to shape futures and make a lasting impact. Welcome to St. Mary's Arts and Science College, where education transforms lives.
+            </p>
+            
+            <div class="about-stats mt-lg">
+               <div class="stat-item">
+                   <h3 class="text-gold">10+</h3>
+                   <span>Programs</span>
+               </div>
+               <div class="stat-item">
+                   <h3 class="text-gold">Expert</h3>
+                   <span>Faculty</span>
+               </div>
+               <div class="stat-item">
+                   <h3 class="text-gold">100%</h3>
+                   <span>Dedication</span>
+               </div>
+            </div>
+        </div>
+        <div class="administration">
+            <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.2rem);">Administration</h2>
+            <div class="title-accent" style="margin-left: 0;"></div>
+            <div class="admin-cards mt-sm">
+                <div class="admin-card-premium hover-lift">
+                    <div class="admin-avatar">
+                        <img src="assets/images/Director.jpg" alt="Fr. Jose Mathew Parayil" class="admin-img img-director"/>
+                    </div>
+                    <div class="admin-info">
+                        <span class="admin-role">Director</span>
+                        <h4>Fr. Jose Mathew Parayil</h4>
+                    </div>
+                </div>
+                <div class="admin-card-premium hover-lift">
+                    <div class="admin-avatar">
+                        <img src="assets/images/Principal.jpg" alt="Dr.Sr. Jeeva Chacko" class="admin-img img-principal"/>
+                    </div>
+                    <div class="admin-info">
+                        <span class="admin-role">Principal</span>
+                        <h4>Dr.Sr. Jeeva Chacko</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Academic Offerings -->
+<section id="courses" class="courses section-padding courses-bg">
+    <div class="container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+            <span class="badge-outline">Discover Programs</span>
+            <h2 class="section-title">Academic Offerings</h2>
+            <div class="title-accent"></div>
+            <p class="section-subtitle">Explore our comprehensive educational programs designed for academic excellence and professional growth.</p>
+        </div>
+        
+        <!-- UG -->
+        <div class="course-category">
+            <div class="category-header">
+                <span class="material-symbols-outlined">school</span>
+                <h3>Undergraduate Programs</h3>
+            </div>
+            <div class="card-grid">
+                <div class="course-card-premium hover-glow card-color-1">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-1">
+                            <span class="material-symbols-outlined">payments</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 3 Years</span>
+                    </div>
+                    <div class="card-middle">
+                        <span class="badge-uni">Kannur University</span>
+                        <h4>B.Com Finance</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two or equivalent</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+                
+                <div class="course-card-premium hover-glow card-color-2">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-2">
+                            <span class="material-symbols-outlined">handshake</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 3 Years</span>
+                    </div>
+                    <div class="card-middle">
+                        <span class="badge-uni">Kannur University</span>
+                        <h4>B.Com Co-operation</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two or equivalent</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-3">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-3">
+                            <span class="material-symbols-outlined">history_edu</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 3 Years</span>
+                    </div>
+                    <div class="card-middle">
+                        <span class="badge-uni">Kannur University</span>
+                        <h4>B.A. English</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two or equivalent</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-4">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-4">
+                            <span class="material-symbols-outlined">calculate</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 3 Years</span>
+                    </div>
+                    <div class="card-middle">
+                        <span class="badge-uni">Kannur University</span>
+                        <h4>B.Sc Mathematics</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two or equivalent</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PG -->
+        <div class="course-category">
+            <div class="category-header">
+                <span class="material-symbols-outlined">workspace_premium</span>
+                <h3>Postgraduate Programs</h3>
+            </div>
+            <div class="card-grid pt-sm">
+                <div class="course-card-premium hover-glow card-color-5">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-5">
+                            <span class="material-symbols-outlined">payments</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 2 Years</span>
+                    </div>
+                    <div class="card-middle">
+                        <span class="badge-uni">Kannur University</span>
+                        <h4>M.Com Finance</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Degree in relevant field</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add-on -->
+        <div class="course-category mt-lg">
+            <div class="category-header">
+                <span class="material-symbols-outlined">terminal</span>
+                <h3>Add-On Courses (KELTRON)</h3>
+            </div>
+            <div class="card-grid pt-sm">
+                <div class="course-card-premium hover-glow card-color-6">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-6">
+                            <span class="material-symbols-outlined">language</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 2 Months</span>
+                    </div>
+                    <div class="card-middle">
+                        <h4>Professional Diploma in SEO & Digital Marketing</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-7">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-7">
+                            <span class="material-symbols-outlined">security</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 2 Months</span>
+                    </div>
+                    <div class="card-middle">
+                        <h4>Professional Diploma in Ethical Hacking and Cyber Security</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-8">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-8">
+                            <span class="material-symbols-outlined">computer</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 2 Months</span>
+                    </div>
+                    <div class="card-middle">
+                        <h4>Diploma in Computer Application</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-9">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-9">
+                            <span class="material-symbols-outlined">business_center</span>
+                        </div>
+                        <span class="badge-duration"><span class="material-symbols-outlined icon-sm">schedule</span> 2 Months</span>
+                    </div>
+                    <div class="card-middle">
+                        <h4>Diploma in Office Administration</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Plus Two</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="course-category mt-lg">
+            <div class="category-header">
+                <span class="material-symbols-outlined">translate</span>
+                <h3>Language Courses (VIBGYOR)</h3>
+            </div>
+            <div class="card-grid pt-sm">
+                <div class="course-card-premium hover-glow card-color-10">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-10">
+                            <span class="material-symbols-outlined">flight_takeoff</span>
+                        </div>
+                    </div>
+                    <div class="card-middle">
+                        <h4>IELTS</h4>
+                        <p class="sub-text" style="font-size:0.85rem; color:var(--color-on-surface-variant); margin-top:0.25rem;">Professional coaching for international mobility.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Aspiring Students/Professionals</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-11">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-11">
+                            <span class="material-symbols-outlined">local_hospital</span>
+                        </div>
+                    </div>
+                    <div class="card-middle">
+                        <h4>OET</h4>
+                        <p class="sub-text" style="font-size:0.85rem; color:var(--color-on-surface-variant); margin-top:0.25rem;">Specialized healthcare English proficiency coaching.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Healthcare Professionals</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-12">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-12">
+                            <span class="material-symbols-outlined">public</span>
+                        </div>
+                    </div>
+                    <div class="card-middle">
+                        <h4>UKVI</h4>
+                        <p class="sub-text" style="font-size:0.85rem; color:var(--color-on-surface-variant); margin-top:0.25rem;">Guidance for UK Visas and Immigration requirements.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: UK Visa Applicants</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+
+                <div class="course-card-premium hover-glow card-color-3">
+                    <div class="card-top">
+                        <div class="course-icon icon-color-3">
+                            <span class="material-symbols-outlined">school</span>
+                        </div>
+                    </div>
+                    <div class="card-middle">
+                        <h4>GERMAN</h4>
+                        <p class="sub-text" style="font-size:0.85rem; color:var(--color-on-surface-variant); margin-top:0.25rem;">Levels A1 to B2 language certification training.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="eligibility">Eligibility: Open to all</div>
+                        <div class="course-action"><span class="material-symbols-outlined">arrow_forward</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Section (No Background Images) -->
+<section id="facilities" class="facilities section-padding pattern-bg">
+    <div class="container">
+        <div class="text-center">
+            <span class="badge-outline">Campus Life</span>
+            <h2 class="section-title">World-Class Infrastructure</h2>
+            <div class="title-accent"></div>
+            <p class="section-subtitle">Explore the state-of-the-art facilities that power academic excellence and holistic development.</p>
+        </div>
+        <div class="facilities-grid">
+            <div class="facility-card-premium fac-theme-blue">
+                <div class="facility-bg-icon icon-color-1"><span class="material-symbols-outlined">biotech</span></div>
+                <div class="facility-number">01</div>
+                <div class="facility-content">
+                    <div class="facility-icon fac-icon-blue"><span class="material-symbols-outlined">science</span></div>
+                    <h4>Cutting-Edge Labs</h4>
+                    <p>Immerse yourself in hands-on learning with our modern and well-equipped laboratories. Gain practical skills that prepare you for real-world challenges.</p>
+                </div>
+            </div>
+            <div class="facility-card-premium fac-theme-green">
+                <div class="facility-bg-icon icon-color-2"><span class="material-symbols-outlined">menu_book</span></div>
+                <div class="facility-number">02</div>
+                <div class="facility-content">
+                    <div class="facility-icon fac-icon-green"><span class="material-symbols-outlined">auto_stories</span></div>
+                    <h4>Resourceful Library</h4>
+                    <p>Access a vast collection of IT resources, books, journals, and research materials in our comprehensive library.</p>
+                </div>
+            </div>
+            <div class="facility-card-premium fac-theme-purple">
+                <div class="facility-bg-icon icon-color-4"><span class="material-symbols-outlined">monitor</span></div>
+                <div class="facility-number">03</div>
+                <div class="facility-content">
+                    <div class="facility-icon fac-icon-purple"><span class="material-symbols-outlined">cast_for_education</span></div>
+                    <h4>Smart Classrooms</h4>
+                    <p>Learn in a tech-enabled environment that supports interactive and engaging teaching methods.</p>
+                </div>
+            </div>
+            <div class="facility-card-premium fac-theme-orange">
+                <div class="facility-bg-icon icon-color-3"><span class="material-symbols-outlined">restaurant</span></div>
+                <div class="facility-number">04</div>
+                <div class="facility-content">
+                    <div class="facility-icon fac-icon-orange"><span class="material-symbols-outlined">local_cafe</span></div>
+                    <h4>Canteen</h4>
+                    <p>Satisfy your appetite with a well-maintained canteen offering a variety of culinary options.</p>
+                </div>
+            </div>
+            <div class="facility-card-premium fac-theme-teal">
+                <div class="facility-bg-icon icon-color-6"><span class="material-symbols-outlined">fitness_center</span></div>
+                <div class="facility-number">05</div>
+                <div class="facility-content">
+                    <div class="facility-icon fac-icon-teal"><span class="material-symbols-outlined">sports_basketball</span></div>
+                    <h4>Sports & Fitness</h4>
+                    <p>Stay active and healthy with our sports facilities and fitness amenities, promoting a balanced lifestyle.</p>
+                </div>
+            </div>
+            <div class="facility-card-premium fac-theme-slate">
+                <div class="facility-bg-icon icon-color-9"><span class="material-symbols-outlined">local_parking</span></div>
+                <div class="facility-number">06</div>
+                <div class="facility-content">
+                    <div class="facility-icon fac-icon-slate"><span class="material-symbols-outlined">directions_car</span></div>
+                    <h4>Ample Parking</h4>
+                    <p>Enjoy hassle-free parking facilities, ensuring convenience during your time on campus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact section-padding dark-bg">
+    <div class="container max-w-lg">
+        <div class="contact-box glass-panel">
+            <div class="contact-info">
+                <h2>Begin Your Journey</h2>
+                <p>Have questions about our programs or the admission process? Our academic counselors are here to help.</p>
+                <div class="contact-list">
+                    <div class="c-item">
+                        <span class="material-symbols-outlined text-gold">mail</span>
+                        <span>smcpanathady@gmail.com</span>
+                    </div>
+                    <div class="c-item">
+                        <span class="material-symbols-outlined text-gold">call</span>
+                        <span>7829825144, 9605904859</span>
+                    </div>
+                    <div class="c-item">
+                        <span class="material-symbols-outlined text-gold">location_on</span>
+                        <span>Cherupanathady, Kasargod Dist, Kerala</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <select required>
+                            <option value="">Select Course of Interest</option>
+                            <option value="bcom-fin">B.Com Finance</option>
+                            <option value="bcom-coop">B.Com Co-operation</option>
+                            <option value="ba-eng">B.A. English</option>
+                            <option value="mcom">M.Com Finance</option>
+                            <option value="addon">Add-On Course (KELTRON)</option>
+                            <option value="lang">Language Course (VIBGYOR)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-grid container">
+        <div class="footer-brand">
+            <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+            <p>Nurturing minds and hearts for a brighter tomorrow through dedicated scholarship and values-based education.</p>
+            <div class="socials">
+                <span class="material-symbols-outlined">social_leaderboard</span>
+                <span class="material-symbols-outlined">video_library</span>
+                <span class="material-symbols-outlined">photo_camera</span>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Faculty Directory</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h5>Support</h5>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Grievance Cell</a></li>
+                <li><a href="#">Campus Map</a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h5>Newsletter</h5>
+            <p>Stay updated with the latest college news and events.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit"><span class="material-symbols-outlined">send</span></button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 St. Mary's Arts and Science College. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
