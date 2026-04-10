@@ -24,21 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    // Video Crossfade Logic (Interval-based for reliability)
-    const video1 = document.getElementById('heroVideo1');
-    const video2 = document.getElementById('heroVideo2');
-    
-    if (video1 && video2) {
-        setInterval(() => {
-            if (video1.classList.contains('active')) {
-                video1.classList.remove('active');
-                video2.classList.add('active');
-            } else {
-                video2.classList.remove('active');
-                video1.classList.add('active');
-            }
-        }, 7000); // Crossfade every 7 seconds
-    }
 
     // Mobile Menu Toggle
     const mobileToggle = document.getElementById('mobileToggle');
