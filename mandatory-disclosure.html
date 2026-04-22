@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandatory Disclosure | St. Mary's College</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=27">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-variant) 100%);
+            padding: 12rem 0 6rem;
+            color: white;
+            text-align: center;
+        }
+        .disclosure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .disclosure-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .disclosure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: var(--color-secondary);
+        }
+        .disclosure-card h3 {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+        }
+        .disclosure-card .icon {
+            font-size: 2.5rem;
+            color: var(--color-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="St. Mary's College Logo" class="brand-logo" />
+                <div class="brand-text">
+                    <h1>St. Mary's Arts and Science College, Cherupanathady</h1>
+                    <p>Cherupanathady, Panathady PO, Rajapuram Via, Kasargod Dist, Kerala - 671532</p>
+                </div>
+            </div>
+            <div class="contact-top hidden-mobile">
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">call</span>
+                    <span>7829825144, 9605904859</span>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">mail</span>
+                    <a href="mailto:smcpanathady@gmail.com">smcpanathady@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container nav-container">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#courses">Courses</a>
+                    <a href="index.html#facilities">Facilities</a>
+                    <a href="index.html#activities">Activities</a>
+                    <a href="index.html#gallery">Gallery</a>
+                    <a href="index.html#contact">Admissions</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="badge">Mandatory Compliance</span>
+                <h1 class="section-title" style="color: white;">AICTE Mandatory Disclosure</h1>
+                <div class="title-accent"></div>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Public transparency and accountability documentation for St. Mary's College.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="disclosure-grid">
+                    <a href="anti-ragging.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">gavel</span>
+                        <h3>Anti-Ragging Squad</h3>
+                        <p>Composition and measures taken to prevent ragging in campus.</p>
+                    </a>
+                    <a href="sc-st-committee.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">diversity_3</span>
+                        <h3>Committee For SC/ST</h3>
+                        <p>Support and remedial coaching for students in reserved categories.</p>
+                    </a>
+                    <a href="iqac.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">verified_user</span>
+                        <h3>IQAC</h3>
+                        <p>Internal Quality Assurance Cell for academic excellence sustenance.</p>
+                    </a>
+                    <a href="bca-program.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">terminal</span>
+                        <h3>BCA Program</h3>
+                        <p>Seats, duration, cut-off marks, and admission details for the BCA course.</p>
+                    </a>
+                    <a href="infrastructure.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">account_balance</span>
+                        <h3>Infrastructure</h3>
+                        <p>Information on Green Campus, Library, Labs, and Classrooms.</p>
+                    </a>
+                    <a href="student-support.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">support_agent</span>
+                        <h3>Student Support</h3>
+                        <p>Counselling, Mentoring, and Career Guidance services.</p>
+                    </a>
+                    <a href="clubs-activities.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">groups</span>
+                        <h3>Clubs & Activities</h3>
+                        <p>Details on various student clubs, industrial visits, and alumni meets.</p>
+                    </a>
+                    <a href="rti.html" class="disclosure-card">
+                        <span class="material-symbols-outlined icon">info</span>
+                        <h3>RTI Information</h3>
+                        <p>Right to Information officer details and contact information.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+                <p>Nurturing minds and hearts for a brighter tomorrow through dedicated scholarship and values-based
+                    education.</p>
+                <div class="socials">
+                    <span class="material-symbols-outlined">social_leaderboard</span>
+                    <span class="material-symbols-outlined">video_library</span>
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html#contact">Admissions</a></li>
+                    <li><a href="index.html#activities">Alumni</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Faculty Directory</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Grievance Cell</a></li>
+                    <li><a href="#">Campus Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h5>Newsletter</h5>
+                <p>Stay updated with the latest college news and events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><span class="material-symbols-outlined">send</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Mary's Arts and Science College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

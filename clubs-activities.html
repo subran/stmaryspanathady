@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clubs & Activities | St. Mary's College</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=27">
+    <style>
+        .page-header-simple {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-variant) 100%);
+            padding: 10rem 0 4rem;
+            color: white;
+        }
+        .content-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+        .club-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        .club-section:last-child {
+            border-bottom: none;
+        }
+        .club-section h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .club-section h3 .icon {
+            color: var(--color-secondary);
+        }
+        .activity-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .activity-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--color-secondary);
+        }
+        .activity-item h4 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .activity-item p {
+            font-size: 0.95rem;
+            color: var(--color-on-surface-variant);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="St. Mary's College Logo" class="brand-logo" />
+                <div class="brand-text">
+                    <h1>St. Mary's Arts and Science College, Cherupanathady</h1>
+                    <p>Cherupanathady, Panathady PO, Rajapuram Via, Kasargod Dist, Kerala - 671532</p>
+                </div>
+            </div>
+            <div class="contact-top hidden-mobile">
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">call</span>
+                    <span>7829825144, 9605904859</span>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">mail</span>
+                    <a href="mailto:smcpanathady@gmail.com">smcpanathady@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container nav-container">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="mandatory-disclosure.html" class="active">Mandatory Disclosure</a>
+                    <a href="index.html#courses">Courses</a>
+                    <a href="index.html#facilities">Facilities</a>
+                    <a href="index.html#activities">Activities</a>
+                    <a href="index.html#contact">Admissions</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header-simple">
+            <div class="container">
+                <h1 class="section-title" style="color: white; font-size: 2.5rem;">Clubs & Activities</h1>
+                <div class="title-accent" style="margin-left: 0;"></div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <div class="content-box">
+                    
+                    <div class="club-section">
+                        <h3><span class="material-symbols-outlined icon">forest</span> Nature Club</h3>
+                        <p>Promoting environmental awareness and conservation through various activities.</p>
+                        <ul>
+                            <li>Electric Safety Awareness Seminar</li>
+                            <li>Nature Camp & Eco Tour</li>
+                            <li>"Snehamoru Kumbil" - Water Pot for Thirsty Birds project</li>
+                            <li>Campus Tree Identification & Herbal Garden Setting</li>
+                        </ul>
+                    </div>
+
+                    <div class="club-section">
+                        <h3><span class="material-symbols-outlined icon">lightbulb</span> ED Club (Entrepreneurship Development)</h3>
+                        <p>Nurturing the entrepreneurial spirit among students.</p>
+                        <ul>
+                            <li>Student Entrepreneurs Meet</li>
+                            <li>Week-long celebrations for World Entrepreneurs Day</li>
+                            <li>Industrial Visits to local manufacturing units & firms</li>
+                        </ul>
+                    </div>
+
+                    <div class="club-section">
+                        <h3><span class="material-symbols-outlined icon">terminal</span> IT Club</h3>
+                        <p>Keeping students updated with the latest technological trends.</p>
+                        <ul>
+                            <li>Ethical Hacking Workshops</li>
+                            <li>Python and Data Science seminars</li>
+                            <li>Workshops on Networking and AI for LinkedIn</li>
+                        </ul>
+                    </div>
+
+                    <div class="club-section">
+                        <h3><span class="material-symbols-outlined icon">how_to_vote</span> Electoral Literacy Club</h3>
+                        <p>Educating students about democratic processes and voter rights.</p>
+                        <ul>
+                            <li>Voter Registration Drives</li>
+                            <li>Mock Elections & Awareness Campaigns</li>
+                            <li>Debates & Discussion Sessions</li>
+                        </ul>
+                    </div>
+
+                    <div class="club-section">
+                        <h3><span class="material-symbols-outlined icon">radio</span> FM Club</h3>
+                        <p>Developing communication and media skills.</p>
+                        <ul>
+                            <li>Radio Jockeying (RJ) Training</li>
+                            <li>Content Development for Community Radio</li>
+                            <li>Technical Workshops and Media Visits</li>
+                        </ul>
+                    </div>
+
+                    <div class="club-section">
+                        <h3>Other Academic Activities</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <h4>Industrial Visits/Tours</h4>
+                                <p>Regularly arranged industrial tours to provide practical exposure to professional environments.</p>
+                            </div>
+                            <div class="activity-item">
+                                <h4>Alumni Activities</h4>
+                                <p>Batch-wise alumni meets conducted through online and offline modes by various departments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+                <p>Nurturing minds and hearts for a brighter tomorrow through dedicated scholarship and values-based
+                    education.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Mary's Arts and Science College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

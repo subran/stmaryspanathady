@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTI Information Officer | St. Mary's College</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=27">
+    <style>
+        .page-header-simple {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-variant) 100%);
+            padding: 10rem 0 4rem;
+            color: white;
+        }
+        .content-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+        .contact-card {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            padding: 2.5rem;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .contact-card .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-card .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .contact-info h3 {
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+            font-size: 1.5rem;
+        }
+        .contact-info .designation {
+            color: var(--color-secondary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .contact-list .item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--color-on-surface-variant);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="St. Mary's College Logo" class="brand-logo" />
+                <div class="brand-text">
+                    <h1>St. Mary's Arts and Science College, Cherupanathady</h1>
+                    <p>Cherupanathady, Panathady PO, Rajapuram Via, Kasargod Dist, Kerala - 671532</p>
+                </div>
+            </div>
+            <div class="contact-top hidden-mobile">
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">call</span>
+                    <span>7829825144, 9605904859</span>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">mail</span>
+                    <a href="mailto:smcpanathady@gmail.com">smcpanathady@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container nav-container">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="mandatory-disclosure.html" class="active">Mandatory Disclosure</a>
+                    <a href="index.html#courses">Courses</a>
+                    <a href="index.html#facilities">Facilities</a>
+                    <a href="index.html#activities">Activities</a>
+                    <a href="index.html#contact">Admissions</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header-simple">
+            <div class="container text-center">
+                <h1 class="section-title" style="color: white; font-size: 2.5rem;">Right to Information (RTI)</h1>
+                <div class="title-accent"></div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <div class="content-box">
+                    <p class="text-center" style="margin-bottom: 3rem;">As per the Right to Information Act, the following official is designated to handle all inquiries and provide required information regarding the college.</p>
+                    
+                    <div class="contact-card">
+                        <div class="avatar">
+                            <img src="assets/images/Principal.jpg" alt="Dr. Jeeva Chacko" />
+                        </div>
+                        <div class="contact-info">
+                            <span class="designation">Information Officer</span>
+                            <h3>Dr. Jeeva Chacko</h3>
+                            <div class="contact-list">
+                                <div class="item">
+                                    <span class="material-symbols-outlined">assignment_ind</span>
+                                    <span>Principal</span>
+                                </div>
+                                <div class="item">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <span>9562170885</span>
+                                </div>
+                                <div class="item">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    <span>srjeevachackomsj@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+                <p>Nurturing minds and hearts for a brighter tomorrow through dedicated scholarship and values-based
+                    education.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Mary's Arts and Science College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

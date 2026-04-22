@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infrastructural Information | St. Mary's College</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=27">
+    <style>
+        .page-header-simple {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-variant) 100%);
+            padding: 10rem 0 4rem;
+            color: white;
+        }
+        .content-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+        .infra-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        .infra-section:last-child {
+            border-bottom: none;
+        }
+        .infra-section h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .infra-section h3 .icon {
+            color: var(--color-secondary);
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        .info-table th, .info-table td {
+            border: 1px solid #eee;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+        .info-table th {
+            background: #f8f9fa;
+            color: var(--color-primary);
+        }
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="St. Mary's College Logo" class="brand-logo" />
+                <div class="brand-text">
+                    <h1>St. Mary's Arts and Science College, Cherupanathady</h1>
+                    <p>Cherupanathady, Panathady PO, Rajapuram Via, Kasargod Dist, Kerala - 671532</p>
+                </div>
+            </div>
+            <div class="contact-top hidden-mobile">
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">call</span>
+                    <span>7829825144, 9605904859</span>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined icon">mail</span>
+                    <a href="mailto:smcpanathady@gmail.com">smcpanathady@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container nav-container">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="mandatory-disclosure.html" class="active">Mandatory Disclosure</a>
+                    <a href="index.html#courses">Courses</a>
+                    <a href="index.html#facilities">Facilities</a>
+                    <a href="index.html#activities">Activities</a>
+                    <a href="index.html#contact">Admissions</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header-simple">
+            <div class="container">
+                <h1 class="section-title" style="color: white; font-size: 2.5rem;">Infrastructural Information</h1>
+                <div class="title-accent" style="margin-left: 0;"></div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <div class="content-box">
+                    
+                    <div class="infra-section">
+                        <h3><span class="material-symbols-outlined icon">eco</span> Green Campus</h3>
+                        <p>A Green Campus is a place where environmental friendly practices and education combine to promote sustainable culture. We redefine environmental awareness by creating solutions for environmental, social, and economic needs of mankind.</p>
+                        <a href="https://smcp.ac.in/page/green_campus" class="link-button" target="_blank">Explore Green Campus <span class="material-symbols-outlined" style="font-size: 1.2rem;">open_in_new</span></a>
+                    </div>
+
+                    <div class="infra-section">
+                        <h3><span class="material-symbols-outlined icon">meeting_room</span> Classrooms</h3>
+                        <p>The college has 20 highly advanced classrooms (600 sq. ft each), 2 LCD enabled classes, 2 Smart classes, 1 Seminar Hall, and LED TV facilities. These are used for regular classes as well as add-on and certificate courses after hours.</p>
+                        <a href="https://smcp.ac.in/page/infrastructure" class="link-button" target="_blank">View Infrastructure <span class="material-symbols-outlined" style="font-size: 1.2rem;">open_in_new</span></a>
+                    </div>
+
+                    <div class="infra-section">
+                        <h3><span class="material-symbols-outlined icon">local_library</span> Library</h3>
+                        <p>Spacious, modern, and automated library with a collection of 10,833 books and subscriptions to various journals and magazines. Library functions are automated using **Koha** and we offer **OPAC** for easy document location.</p>
+                        
+                        <h4>Department-wise Book Collection:</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr><th>Department</th><th>No. of Books</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Commerce</td><td>3558</td></tr>
+                                <tr><td>English</td><td>2450</td></tr>
+                                <tr><td>Computer Science</td><td>890</td></tr>
+                                <tr><td>Social Work</td><td>670</td></tr>
+                                <tr><td>Malayalam</td><td>2550</td></tr>
+                                <tr><td>Hindi</td><td>876</td></tr>
+                                <tr><td><strong>Total</strong></td><td><strong>10,994</strong></td></tr>
+                            </tbody>
+                        </table>
+                        <p><strong>E-Resources:</strong> DELNET Subscription for e-books and e-journals.</p>
+                    </div>
+
+                    <div class="infra-section">
+                        <h3><span class="material-symbols-outlined icon">translate</span> Language Lab</h3>
+                        <p>Well-equipped lab to enhance communication skills. Features internet facilities and serves as an aid for language teaching and professional training.</p>
+                    </div>
+
+                    <div class="infra-section">
+                        <h3><span class="material-symbols-outlined icon">computer</span> Computer Lab</h3>
+                        <p>Two well-furnished computer labs managed by the department with 30+ systems exclusively for browsing and academic needs. All systems are maintained by experts.</p>
+                    </div>
+
+                    <div class="infra-section">
+                        <h3><span class="material-symbols-outlined icon">podium</span> Seminar Hall</h3>
+                        <p>Fully equipped, spacious seminar halls with ergonomic seating and multimedia facilities like LCD Projectors and sound systems.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+                <p>Nurturing minds and hearts for a brighter tomorrow through dedicated scholarship and values-based
+                    education.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Mary's Arts and Science College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
