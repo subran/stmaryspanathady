@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organogram | St. Mary's College</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css?v=27">
+    <style>
+        :root {
+            --color-dark-bg: #050a10;
+            --color-card-bg: #111827;
+            --color-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--color-dark-bg);
+            color: #e5e7eb;
+        }
+
+        .organogram-page {
+            padding: 12rem 0 6rem;
+            min-height: 100vh;
+        }
+
+        .tree-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            padding: 2rem;
+            overflow-x: auto;
+        }
+
+        .node {
+            background: var(--color-card-bg);
+            border: 1px solid var(--color-border);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            min-width: 180px;
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .node:hover {
+            border-color: var(--color-secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .node.root {
+            background: var(--color-secondary);
+            color: white;
+            font-weight: 800;
+            border: none;
+        }
+
+        .node.executive {
+            background: var(--color-primary);
+            color: white;
+            font-weight: 700;
+        }
+
+        .node h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .node p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* Pillars Layout */
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            width: 100%;
+            max-width: 1400px;
+            margin-top: 2rem;
+        }
+
+        .pillar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .pillar-title {
+            background: #1f2937;
+            color: var(--color-secondary-light);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 212, 136, 0.2);
+            width: 100%;
+            text-align: center;
+        }
+
+        .committee-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 100%;
+        }
+
+        .committee-node {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .committee-node:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Connecting Lines (Simplified for responsive) */
+        .connector-line {
+            width: 2px;
+            height: 3rem;
+            background: var(--color-border);
+        }
+
+        .brand-text h1 { color: #f8f9fa !important; }
+        .nav-links a { color: rgba(255, 255, 255, 0.7) !important; }
+        .nav-links a:hover, .nav-links a.active { color: white !important; }
+        
+        @media (max-width: 1100px) {
+            .pillar-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Customized for Dark) -->
+    <header class="header" style="background: rgba(0,0,0,0.8);">
+        <div class="header-container">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="St. Mary's College Logo" class="brand-logo" />
+                <div class="brand-text">
+                    <h1>St. Mary's Arts and Science College, Cherupanathady</h1>
+                    <p style="color: rgba(255,255,255,0.6);">Cherupanathady, Panathady PO, Rajapuram Via, Kasargod Dist, Kerala - 671532</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar" style="background: #000;">
+            <div class="container nav-container">
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="mandatory-disclosure.html">Compliance</a>
+                    <a href="#" class="active">Organogram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="organogram-page">
+        <div class="container text-center">
+            <span class="badge" style="background: var(--color-secondary);">Structure</span>
+            <h1 class="section-title" style="color: white;">Organogram</h1>
+            <div class="title-accent"></div>
+        </div>
+
+        <div class="tree-container">
+            <!-- Governing Body -->
+            <div class="node root">
+                <h4>CFIC</h4>
+                <p>Governing Body</p>
+            </div>
+            
+            <div class="connector-line"></div>
+
+            <div style="display: flex; gap: 2rem; align-items: center;">
+                <div class="node">
+                    <h4>Chairman</h4>
+                </div>
+                <div style="width: 2rem; height: 2px; background: var(--color-border);"></div>
+                <div class="node">
+                    <h4>Managing Board</h4>
+                </div>
+            </div>
+
+            <div class="connector-line"></div>
+
+            <!-- Executive -->
+            <div class="node executive">
+                <h4>Principal</h4>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: -1.5rem;">
+                <div class="connector-line" style="height: 1.5rem;"></div>
+                <div class="node" style="min-width: 120px; font-size: 0.9rem;">
+                    <h4>IQAC</h4>
+                </div>
+            </div>
+
+            <div class="connector-line" style="height: 2rem;"></div>
+
+            <!-- Main Pillars -->
+            <div class="pillar-grid">
+                <!-- Academics -->
+                <div class="pillar">
+                    <div class="pillar-title">Academics</div>
+                    <div class="committee-list">
+                        <div class="committee-node">Research & Publications</div>
+                        <div class="committee-node">Research Promotion Committee</div>
+                        <div class="committee-node">Library & Advisory Committee</div>
+                        <div class="committee-node">Academic Council / Board of Studies</div>
+                        <div class="committee-node">Timetable Committee</div>
+                        <div class="committee-node">Internal Examination Committee</div>
+                        <div class="node executive" style="margin-top: 1rem; width: 100%;">
+                            <h4>HOD</h4>
+                        </div>
+                        <div class="committee-node">Teaching Staff</div>
+                        <div class="committee-node">Students / Association Secretary</div>
+                        <div class="committee-node">Non-Teaching Laboratory Staff</div>
+                        <div class="committee-node">Class Representative</div>
+                        <div class="committee-node">Alumni Association</div>
+                    </div>
+                </div>
+
+                <!-- Administrative Office -->
+                <div class="pillar">
+                    <div class="pillar-title">Administrative Office</div>
+                    <div class="committee-list">
+                        <div class="committee-node">Office Superintendent</div>
+                        <div class="committee-node">Office Staff</div>
+                        <div class="committee-node">Accountant</div>
+                        <div class="committee-node">System Admin</div>
+                        <div class="committee-node">Minority Cell</div>
+                        <div class="committee-node">Grievance Redressal Cell</div>
+                        <div class="committee-node">OBC Cell</div>
+                        <div class="committee-node">PTA</div>
+                    </div>
+                </div>
+
+                <!-- Student Welfare -->
+                <div class="pillar">
+                    <div class="pillar-title">Student Welfare</div>
+                    <div class="committee-list">
+                        <div class="committee-node">Discipline Committee</div>
+                        <div class="committee-node">Placement & Career Guidance Cell</div>
+                        <div class="committee-node">Anti-Ragging Cell</div>
+                        <div class="committee-node">Women Cell / Gender Club</div>
+                        <div class="committee-node">SC/ST Cell / ICC</div>
+                        <div class="committee-node">Magazine Committee</div>
+                        <div class="committee-node">NSS / Extension Committee</div>
+                        <div class="committee-node">Arts / Sports / Nature Club</div>
+                        <div class="committee-node">ED / FM / IT Club</div>
+                        <div class="committee-node">Electoral Literacy Club</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Dark Adaption) -->
+    <footer class="footer" style="background: #000; border-top: 1px solid var(--color-border);">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+                <p style="color: rgba(255,255,255,0.6);">Nurturing minds and hearts for a brighter tomorrow through dedicated scholarship and values-based
+                    education.</p>
+            </div>
+            <div class="footer-links">
+                <h5 style="color: white;">Quick Links</h5>
+                <ul>
+                    <li><a href="index.html" style="color: rgba(255,255,255,0.6);">Home</a></li>
+                    <li><a href="mandatory-disclosure.html" style="color: rgba(255,255,255,0.6);">Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top-color: var(--color-border);">
+            <p style="color: rgba(255,255,255,0.4);">&copy; 2024 St. Mary's Arts and Science College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
